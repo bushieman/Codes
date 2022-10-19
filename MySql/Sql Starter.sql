@@ -231,7 +231,6 @@ JOIN order_statuses os
 	ON o.status = os.order_status_id
 ORDER BY status
 
-
 FROM order_items oi
 JOIN order_item_notes oin
 	USING (order_Id, product_id) -- for join statement which require atleast 2 columns to get a unique record
