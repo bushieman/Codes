@@ -3,7 +3,7 @@
 
 -- the USE clause selects the database to use
 USE sql_store;
--- Note: MySQL is not case sensitive, we only use casing to make the syntax muc pretier
+-- Note: MySQL is not case sensitive, we only use casing to make the syntax muc pretier.
 -- the SELECT clause with * selects every column from customers table
 -- the FROM  clause references the target table
 SELECT * 
