@@ -19,7 +19,6 @@ FROM customers;
 -- you can use arithmetic expressions on columns
 SELECT points*100+34 FROM customers;
 
-
 -- use an alias for your columns
 SELECT
     points AS dollars
