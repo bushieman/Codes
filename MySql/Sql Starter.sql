@@ -95,14 +95,12 @@ WHERE last_name REGEXP '[gim]e'
 -- represents a range therefore ae, be, ce, de, become, acer are all valid hits if found inside the last_name
 WHERE last_name REGEXP '[a-d]e'
 
-
--- REGEXP Recap
+-- REGEXP Recap;
 -- ^  beginning 
 -- $ ending
 -- | logical or
 -- [abcd] list
 -- [a-d] range
-
 
 -- the NULL operator
 WHERE phone is NULL 
