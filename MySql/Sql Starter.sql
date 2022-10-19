@@ -124,6 +124,7 @@ LIMIT
 ()
 AND
 OR
+
 -- AS is used to assign specific names to columns
 SELECT quantity * unit_price AS total_price
 
