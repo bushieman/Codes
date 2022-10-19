@@ -96,11 +96,11 @@ WHERE last_name REGEXP '[gim]e'
 WHERE last_name REGEXP '[a-d]e'
 
 -- REGEXP Recap;
--- ^  beginning 
--- $ ending
--- | logical or
--- [abcd] list
--- [a-d] range
+-- ^  = beginning 
+-- $ = ending
+-- | = logical or
+-- [abcd] = list
+-- [a-d] = range
 
 -- the NULL operator
 WHERE phone is NULL 
