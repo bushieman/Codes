@@ -18,7 +18,6 @@ di = {'x': 7, 'y': 8, 'z': 9}
   
 print(point._make(li)) # return namedtuple()
 print(point._asdict()) # return OrderedDict()
-  
 print(point(**di))# ** operator returns namedtuple from dictionary
 
 # other methods
