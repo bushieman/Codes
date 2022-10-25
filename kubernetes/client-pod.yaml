@@ -7,6 +7,7 @@ metadata: # labelling our resource
 spec: # specifications of our resource
   containers:
   - name: client
-    image: alpine # imageinourdockerhub:version(optional)
-    command: [ "sleep" ] # this & ..
-    args: [ "infinity" ] # this commands fixed the crashloopbackoff error. Reason: the container kept being created and failing thus setting sleep to infinity allows the container to run for that specified time(infinity) 
+    image: laithharb/web-app # imageinourdockerhub:version(optional)
+    imagePullPolicy: Never
+  restartPolicy: Always
+  dnsPolicy: ClusterFirst

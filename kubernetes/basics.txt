@@ -61,7 +61,7 @@ docker rmi <image id>
 # using local docker images
 1. # we need to configure docker engine to run inside minikube
 minikube docker-env
-eval $(minikube -p minikube docker-env)
+eval $(minikube docker-env)
 
 minikube image ls --format table # list available images
 
@@ -86,3 +86,5 @@ kubectl describe deployment.app/client-depl
 # instead
 kubectl describe deployment deployment.app/client-depl
 
+# other commands
+minikube status # show the current status of minikube

@@ -16,7 +16,7 @@ newgrp <groupname> # change your users group ID
 # 2. Build a docker image
 # 3. Run a docker container
  
-# starting template
+# starting template for react
 FROM node:alpine
 
 # this is where to save your project in docker
@@ -29,7 +29,7 @@ RUN npm install
 
 COPY ..
 
-CMD ['node main.js']
+CMD ['npm start']
 
 #* terminal commands
 #@ build a docker image in the current dir
