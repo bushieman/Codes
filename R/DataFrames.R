@@ -62,6 +62,9 @@ emp.data$dept <- c("IT","Operations","IT","HR","Finance")
 #* Add cols with cbind func
 emp.data2 <- cbind(emp.data, gender=c('Male', 'Male', 'Female', 'Male', 'Male'))
 
+#* Add cols with ifelse func
+titanic$SurvivedLabel <- ifelse(titanic$Survived == 1, 'Survived', 'Died')
+
 #* Add rows with rbind func
 # Multiple employees
 emp.newdata <- 	data.frame(

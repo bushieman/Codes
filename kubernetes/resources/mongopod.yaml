@@ -6,5 +6,5 @@ metadata:
     app: mongo
 spec:
   containers:
-    - name: mongo
-      image: mongo
+  - name: mongo
+    image: mongo

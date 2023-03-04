@@ -6,5 +6,5 @@ metadata:
     app: server
 spec:
   containers:
-    - name: server
-      image: imageindocker
+  - name: server
+    image: laithharb/server:v1 
