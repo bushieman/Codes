@@ -42,10 +42,10 @@ showtext_auto() # show the fonts
 (plot1 <- messageLocation %>%
 	count(locationReceived, locationSent) %>% # count for each locationreceived a unique locationsent
  	group_by(locationSent) %>%
-    mutate(pct = round(n / sum(n),2)) %>% # perform math computations on numerical variables
+    	mutate(pct = round(n / sum(n),2)) %>% # perform math computations on numerical variables
  	ggplot(aes(y = locationSent, x = pct, fill = locationReceived, label = paste0(locationReceived,' ',pct*100,'%'))) + # paste0 avoids using the sep=' ' option
  	geom_col(width = 0.5, position = position_dodge(0.7), alpha = 0.6, show.legend = FALSE) + # position_dodge for spacing between the categories
-    geom_text(width = 0.5, position = position_dodge(0.7), hjust = -0.4, vjust = 0.5, size = 5, family='comic',  color = '#333232') + # hjust and vjust for adjusting the positioning of the text
+    	geom_text(width = 0.5, position = position_dodge(0.7), hjust = -0.4, vjust = 0.5, size = 5, family='comic',  color = '#333232') + # hjust and vjust for adjusting the positioning of the text
  	scale_x_continuous(labels = percent, limits = c(0,0.6)) + # defining your scales. You can include custom breakpoints
  	theme_minimal() +
 	xlab('% Messages sent to') + 
