@@ -1,4 +1,5 @@
 suppressPackageStartupMessages(library(tidyverse))
+install.packages('ggplot2')
 install.packages('showtext') # for font_add and showtext_auto funcs
 install.packages("maps")
 install.packages("gridExtra") # for grid,arrange func
@@ -9,6 +10,7 @@ install.packages("grid")
 install.packages('showtextdb')
 install.packages('sysfonts')
 library(tidyverse)
+library(ggplot2)
 library(showtext) 
 library(ggpmisc)
 library(scales)
