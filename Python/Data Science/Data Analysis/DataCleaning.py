@@ -76,6 +76,7 @@ df.dropna(how='all') # drop the rows with all no being null values.
 df.dropna(how='all', axis='columns')
 df.dropna(thresh=3) # keep the rows with atleast 3 non-null values
 df.dropna(thresh=3, axis='columns') # keep the columns with atleast 3 non-null values
+df.dropna(subset='column A') # drop rows based on NaN values of a column
 
 # filling null values
 s = pd.Series([1, 2, 3, np.nan, None, 6])
