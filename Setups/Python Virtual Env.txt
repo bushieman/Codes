@@ -1,12 +1,13 @@
 # creating virtual env
-virtualenv --system-site-packages env-name-or-dir-to-env 
+$ virtualenv --system-site-packages env-name-or-dir-to-env 
+$ python3 -m venv env-name-or-dir-to-env # using python
 # --system-site-packages option makes sure you can inherit global packages
 
 # activate the env
-source env-name-or-dir-to-env/bin/activate 
+$ source env-name-or-dir-to-env/bin/activate 
 
 # deactivate the env
-deactivate
+$ deactivate
 
 # delete the env
-rm -r env-name-or-dir-to-env
+$ rm -r env-name-or-dir-to-env
