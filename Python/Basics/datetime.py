@@ -3,6 +3,8 @@ import datetime
 x = datetime.datetime.now() 
 print(x)# display the current date
 print(x.year)# display the year
+
+# use strftime to convert datetime object to string
 print(x.strftime('%a'))# weekday, short version i.e fri
 print(x.strftime('%A'))# weekday, full version i.e friday
 print(x.strftime('%w'))# weekday, number version i.e 5
@@ -32,5 +34,11 @@ print(x.strftime('%G')) # ISO 8601 year i.e 2018
 print(x.strftime('%u')) # ISO 8601 weekday (1-7) i.e 1	
 print(x.strftime('%V')) # ISO 8601 weeknumber (01-53) i.e 01
 
+# create a datetime obj
 x = datetime.datetime(2020, 5, 17)
-print(x) # create a datetime obj
+print(x) 
+
+# use strptime to convert string to datetime object
+datetime_str = '2018-06-29 08:15:27.243860'
+datetime_obj = datetime.datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S.%f')
+print(datetime_obj, type(datetime_obj))
