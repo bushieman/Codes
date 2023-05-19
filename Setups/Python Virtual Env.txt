@@ -11,3 +11,6 @@ $ deactivate
 
 # delete the env
 $ rm -r env-name-or-dir-to-env
+
+# to see all packages installed in the active virtualenv
+python -m pip freeze
