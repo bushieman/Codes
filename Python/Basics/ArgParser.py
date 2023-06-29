@@ -40,7 +40,7 @@ from argparse import ArgumentParser, Namespace
 #@ Defaults
 parser = ArgumentParser()
 # use default parameter to handle missing arguments. 
-# Default must take an extra argument nargs ie the no of arguments you expect
+# Default must take an extra argument; nargs ie the no of arguments you expect
 parser.add_argument('square', help='Squares a given number', type=int, default=2, nargs='?')
 parser.add_argument('-v', '--verbose', help='Verbose description. Use -vv for extra verbose', action='count') # action=count tallies the no of v's in the argument
 args = parser.parse_args()
