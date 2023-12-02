@@ -5,7 +5,8 @@ CMD node App.js
 
 # docker commands
 # docker build -t docker-tutorial . - to build a docker image in the current folder
-# docker image ls - show the current images in docker
+# docker images - show the current images in docker
+# docker image rm <image name>:<specify version>
 # docker run <name of the image>
 # docker run ubuntu - start a docker container 
 # docker run -it -d <container id> - to create and run a docker file
@@ -13,30 +14,3 @@ CMD node App.js
 # docker ps - check running processes
 # docker ps -a - check all processes
 # docker run -it ubuntu - start ubuntu container
-# apt update
-# apt install <name of package>
-# apt remove <name of package>
-# pwd - print working directory - to check where we are in the root directory
-# ls - lists
-# ls -1 - vertically arranged lists
-# ls -l - more details on the lists
-# mkdir <folder> - create a new folder
-# touch <files> - create a new file
-# mv <old file> <new file> - rename files
-# mv <file> /new path - move the file to a new directory 
-# rm <files> - remove files
-# rm <file*> - remove files that start with file
-# rm -r <directory> - remove an entire directory
-# <package> - to open a package
-# <package> <file> - to create a file inside a package and open it
-# cat <file> or <absolute path to file> - open entire content of small files
-# cat <file1> <file2> > <combined file> - combine multiple files into a single file
-# echo <text> > <file> - write the text to the file
-# more <file> or <absolute path to file> - open page by page of a file by scrolling down only using spacebar
-# more <file> or <absolute path to file> - open page by page of a file with options for up and down navigation using arrow keys
-# head -n 5 <file> or <absolute path to file> - show the first 5 lines of the file
-# tail -n 5 <file> or <absolute path to file> - show the last 5 lines of the file
-
-# CTRL w - remove an entire word from the terminal
-# CTRL l - clear the terminal
-# q - to exit
