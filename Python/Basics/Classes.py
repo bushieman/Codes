@@ -31,10 +31,10 @@ class Car:
         self.year = year
 
     def display(self):
-        print("this is a %s %s %s"%(self.year, self.make, self.model)) # the %s are used to reference the car class global variables
+        print(f"this is a {self.year} {self.make} {self.model}")
 
 
-car = Car('ASTON MARTIN', 'db11', 2015)
+car = Car('ASTON MARTIN', 'db12', 2023)
 car.display()
 
 
@@ -189,7 +189,7 @@ class Programmer:
     def _calculate_salary(self, base_value):
         if self._bugs_solved < 10:
             return base_value
-        if self._bugs_solved < 100:
+        elif self._bugs_solved < 100:
             return base_value * 2
         return base_value * 3
 

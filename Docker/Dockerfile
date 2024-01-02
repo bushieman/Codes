@@ -1,16 +1,3 @@
-# Linux Docker setup
-sudo groupadd <groupname> # adding new group 
-sudo adduser <username> # adding new user
-sudo usermod -aG <groupname> <username> # create simlink between user and group
-sudo login # login to your account
-exit # logs out all existing configs
-sudo systemctl list-units # show all processes
-sudo systemctl list-units --type=service # show all services
-sudo systemctl start <name of your service>
-sudo setfacl -m user:$<user>: rw /var/run/docker.sock # ??
-grep <groupname> /etc/group # check existing groups
-newgrp <groupname> # change your users group ID 
-
 # THE DOCKER PROCESS
 # 1. Write a dockerfile
 # 2. Build a docker image
@@ -29,6 +16,9 @@ RUN npm install
 
 COPY ..
 
+# Expose: Tells Docker which port our container is listening to for traffick during port mapping.
+# By default some port are automatically mapped e.g 3000 -> React, therefore you need to expose them in order to use them during port mapping.
+EXPOSE 3000 
 CMD ['npm start']
 
 #* Docker terminal commands
